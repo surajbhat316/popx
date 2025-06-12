@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Welcome.module.css";
+import { Link } from "react-router";
 
 function Welcome() {
   return (
@@ -9,9 +10,12 @@ function Welcome() {
         <p className={styles.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         </p>
-        <button className={styles.create_account}>
-          <span className={styles.create_account_text}>Create Account</span>
-        </button>
+
+        <Link to="/create-account" >
+            <button className={styles.create_account}>
+            <span className={styles.create_account_text}>Create Account</span>
+            </button>        
+        </Link>
 
          <button className={styles.already_registered_login}>
           <span className={styles.already_registered_login_text}>Already Registered? Login</span>
