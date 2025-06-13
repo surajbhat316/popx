@@ -1,3 +1,4 @@
+import AccountSettings from "./components/AccountSettings/AccountSettings";
 import CreateAccount from "./components/CreateAccount/CreateAccount";
 import SignIn from "./components/SignIn/SignIn";
 import Welcome from "./components/Welcome/Welcome";
@@ -17,7 +18,12 @@ function App() {
     {
       path: "/sign-in",
       element: <SignIn />
+    },
+    {
+      path: "/settings",
+      element: <AccountSettings />
     }
+
 
   ])
 

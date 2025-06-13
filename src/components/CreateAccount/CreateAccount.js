@@ -82,7 +82,7 @@ function CreateAccount() {
             </div>
         </div>
 
-        <Link to="/create-account" >
+        <Link to="/settings" >
             <button className={styles.create_account}>
                 <span className={styles.create_account_text}>Create Account</span>
             </button>        
