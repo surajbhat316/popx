@@ -17,9 +17,11 @@ function Welcome() {
             </button>        
         </Link>
 
-         <button className={styles.already_registered_login}>
-          <span className={styles.already_registered_login_text}>Already Registered? Login</span>
-        </button>
+        <Link to="/sign-in" >
+          <button className={styles.already_registered_login}>
+            <span className={styles.already_registered_login_text}>Already Registered? Login</span>
+          </button>
+        </Link>
       </div>
     </div>
   );
